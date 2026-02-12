@@ -16,7 +16,7 @@ See the riserpics directory for images of each type of PCIe riser I'm aware of
 |----------------|----------------------|-------------|----------------------------|------------|--------|-------|------------|------------------------|---------|--------------|-------------|-------------|-----------------------------------|
 | M700 Tiny      | Entry, no vPro       | Tiny3       | None                       | IS1XX1H    | LiteON | JC110 |            | 6th gen                | B150    | 2x DDR4 2133 | 1 / 1       | 0 / 0       | Board name also IQ170IH1?         |
 | M710q          | Entry, no vPro       | Tiny4       | Tiny4 x8 unpopulated       | IQ2X0IH    | LiteON | JC113 |            | 6th/7th gen            | B250    | 2x DDR4 2400 ECC? | 1 / 2  | 0 / 0       |                                   |
-| M720q          | Entry, no vPro       | Tiny5       | Tiny5 x8+4                 | IQ3X0IL    | LCFC   | EQ370 | NM-B551    | 8th/9th gen            | B360    | 2x DDR4 2666 ECC? | 1 / 2       | 0 / 0  |                                   |
+| M720q          | Entry, no vPro       | Tiny5       | Tiny5 x8+4                 | IQ3X0IL    | LCFC   | EQ370 | NM-B551    | 8th/9th gen            | B360    | 2x DDR4 2666 ECC? | 1 / 2       | 0 / 0  | legendary                         |
 | M70q gen 1     | Entry, no vPro       | Tiny6       | Tiny6 x8+4 unpopulated     | IQ4X0IL1   | LCFC   | GH470 | NM-C621/NM-E101 | 10th gen          | H470    | 2x DDR4 2933 ECC? | 1 / 2  | 0 / 1       |                                   |
 | M70q gen 2     | Entry, no vPro       | Tiny7       | Tiny6 x8+4 unpopulated     | IB5X0IL2   | LCFC   | HB560 | NM-D331    | 10th/11th gen          | B560    | 2x DDR4 3200?| 1 / 2       | 0 / 1       |                                   |
 | M70q gen 3     | Entry, vPro          | Tiny8       | weird x4 unpopulated       | IQ6X0IL2   | LCFC   | HB660 | NM-D861    | 12th gen               | Q670    | 2x DDR4 3200 | 1 / 2       | 0 / 1       | Does have a vPro option?          |
@@ -68,10 +68,12 @@ See the riserpics directory for images of each type of PCIe riser I'm aware of
 |                |                      |             |                            |            |        |       |            |                        |         |              |             |             |                                   |
 | Neo 50q gen 4  | lil office pc        | Tiny8?      | None                       | IRPLIL     | LCFC   | KH450 | NM-E951    | 13th gen Raptor Lake-H | SoC     |              | 1 / 2       | 0 / 0       | 1 / 2 ram slots on low end config |
 | Neo 50q gen 5  | lil office pc        | ?           | None                       | IRPL_RIL   | LCFC   | MTY04/MTY05 | NM-G881 | Core 200 H          | SoC     | 2x DDR5 5600 | 2 / 2       | 0 / 0       | New BTB connector, 2nd on bottom? |
+| Neo 50q Gen 6  | lil office pc        | ?           | ?                          | ?          | ?      | ?     | ?          | Core Ultra 200 V       | SoC     | MoP          | 1 / ?       | 0 / ?       | Lunar Lake 🥺                     |
 | Neo 50q QC     | lil office pc        | ?           | other weird x4 unpopulated | QX1PIL1    | LCFC   | LB380/MTYA0 | NM-G401 | Snapdragon X (Plus) | SoC     | 4x LPDDR5X   | 2 / 2       | 0 / 0       | Unpop x4 riser slot diff from M70q|
 | Neo 55q Gen 6  | lil office pc        |             | None                       | FP8IL      | LCFC   | NTY58/NTY59 | NM-H371 | Ryzen (AI) 5 200/300| SoC     | 2x DDR5 5600 | 2 / 2       | 0 / 0       | PCB has footprints for USB-C USB4?|
 |                |                      |             |                            |            |        |       |            |                        |         |              |             |             |                                   |
-| V100q          | little guy           | ?           | None                       | IADLNXB_V1.0 | ?      |       |          | Intel N-series         | SoC     | 1x DDR5 5600 | 1 / 1       | 0 / 0       | has footprints for AIO model?     |
+| V100q          | little guy           | ?           | None                       |IADLNXB_V1.0| ?      |       |            | Intel N-series         | SoC     | 1x DDR5 5600 | 1 / 1       | 0 / 0       | has footprints for AIO model?     |
+| V105q          | little guy           | ?           | ?                          | ?          | ?      | ?     | ?          | Ryzen 10-series        | SoC     | ???b LPDDR5x | 1 / ?       | 0 / ?       |                                   |
 |                |                      |             |                            |            |        |       |            |                        |         |              |             |             |                                   |
 | M90n-1 Nano    | cuteee               | ?           | None                       | IWHLNL     | LCFC   | FU420/FU421/FU422 | NM-C401 | 8.5th gen U   | SoC     | 0x DDR4 2400 | 2 / 2       | 0 / 1       | Says M930n and NANO1 on the board |
 | M90n-1 Nano iot| cuteee               | ?           | None                       | IWHLNL     | LCFC   | FU420/FU421/FU422 | NM-C401 | 8.5th gen U   | SoC     | 0x DDR4 2400 | 2 / 2       | 0 / 1       | M90n but 2xCOM 2xLAN -1USB fanless|
@@ -470,11 +472,13 @@ https://pcsupport.lenovo.com/us/en/products/desktops-and-all-in-ones/thinkcentre
 
 https://pcsupport.lenovo.com/nl/en/products/desktops-and-all-in-ones/thinkcentre-neo-series-desktops/thinkcentre-neo-50q-gen-4/12lh/parts/display/compatible  
 https://pcsupport.lenovo.com/nl/en/products/desktops-and-all-in-ones/thinkcentre-neo-series-desktops/thinkcentre-neo-50q-gen-5/13b9/parts/display/compatible  
+https://pcsupport.lenovo.com/nl/nl/products/desktops-and-all-in-ones/thinkcentre-neo-series-desktops/thinkcentre-neo-50q-gen-6/13hr/parts/display/compatible  
 https://pcsupport.lenovo.com/nl/en/products/desktops-and-all-in-ones/thinkcentre-neo-series-desktops/thinkcentre-neo-50q-qc/13c8/parts/display/compatible  
 https://pcsupport.lenovo.com/nl/en/products/desktops-and-all-in-ones/thinkcentre-neo-series-desktops/thinkcentre-neo-55q-gen-6/13gn/parts/display/compatible  
 
 ~~https://pcsupport.lenovo.com/nl/en/products/desktops-and-all-in-ones/v-series-desktops-and-aio/lenovo-v100q/13ge/parts/display/compatible~~  
 https://pcsupport.lenovo.com/nl/nl/products/desktops-and-all-in-ones/v-series-desktops-and-aio/lenovo-v100q/13gf/parts/display/compatible  
+https://pcsupport.lenovo.com/nl/nl/products/desktops-and-all-in-ones/v-series-desktops-and-aio/lenovo-v105q/13q2/parts/display/compatible  
 
 
 https://pcsupport.lenovo.com/nl/en/products/desktops-and-all-in-ones/thinkcentre-m-series-desktops/thinkcentre-m90n-1/11ad/parts/display/compatible  
@@ -711,13 +715,16 @@ todo
 | N4670GT         | PCIe x16, SATA box, Display/USB/Serial option | ?                          | Wistron  | ?      | ?          | 10th gen      | H470?   | 2x DDR4 ?    | 2 / 2       | Very similar to N4660G but 10th gen             |
 | N4680GT         | PCIe x16, SATA box, Display/USB/Serial option | PIQ57L-VRABOOT             | Wistron  | 0ET08? | 202017-1A  | 10th/11th gen | B560    | 2x DDR4 3200 | 1 / ?       |                                                 |
 | N4690GT         |                                               |                            |          |        |            |               |         |              |             |                                                 |
+| N4710G          |                                               |                            |          |        |            |               |         |              |             |                                                 |
 | N4710GT         |                                               |                            |          |        |            |               |         |              |             |                                                 |
+| VN4710GT        |                                               |                            |          |        |            |               |         |              |             |                                                 |
 | VN4720GT        |                                               |                            |          |        |            |               |         |              |             |                                                 |
 |                 |                                               |                            |          |        |            |               |         |              |             |                                                 |
 | N6660G          | PCIe x16, SATA box, Display/USB/Serial option | PIQ37L-Copperbox           | Wistron  | 0BB09? | 17557-1N   | 8th/9th gen   | Q370    | 2x DDR4 2666 | 2 / 2       | Same as N4660G but with Q370 and more USB3      |
-| N6670G          |                                               |                            |          |        |            |               | Q470    |              |             |                                                 |
+| N6670G          |                                               |                            |          |        |            |               | Q470    | 2x DDR4 2933 |             |                                                 |
 | N6680G          | PCIe x16, SATA box, Display/USB/Serial option |                            |          |        |            | 11th gen      | Q570    | 2x DDR4 3200 | 2 / ?       |                                                 |
-| VN6710GT        | PCIe x16, ?                                   |                            |          |        |            | ?/13th/? gen  |         |              |             |                                                 |
+| N6710G          |                                               |                            |          |        |            |               |         |              |             |                                                 |
+| (V?)N6710GT     | PCIe x16, ?                                   |                            |          |        |            | ?/13th/? gen  | Q670    | 2x DDR4?     |             |                                                 |
 | VN6720GT        | PCIe x16, SATA box, Display/USB/Serial option | PIQ67L-vAbraR MB           | Wistron  | 0HA03? | 232007-1   | ?/13/14th gen | B760    | 2x DDR5 4800?| 2 / ?       |                                                 |
 |                 |                                               |                            |          |        |            |               |         |              |             |                                                 |
 | Chromebox CXI5  | ?                                             | PIADLL-MOLI MB             | Wistron  | 0FV06? | 212050-1A  | 12th/? gen U  | SoC     | 2x ?         | 2 / ?       | one m-key is 2230 for emmc                      |
